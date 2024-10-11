@@ -6,15 +6,6 @@
 
 }
 
-/*  #050505,
- #121212,
- #353535,
- #666666,
- #7f7f7f,
- #999999,
- #e5e5e5,
- #f4f4f4 och #087fe7 */
-
 /* Dessa färger används (utan någon inbördes ordning): #050505,
 #121212,
 #353535,
@@ -23,6 +14,8 @@
 #999999,
 #e5e5e5,
 #f4f4f4 och #087fe7. */
+
+/* För box-shadow har dessa färger använts: rgba(0, 0, 0, 0.1) och rgba(0, 0, 0, 0.2). */
 
 /*  Följande typsnittstjocklekar har använts: 650,
  550,
@@ -56,8 +49,7 @@ body {
     padding: 0 15px;
 }
 
-main,
-footer {
+main {
     max-width: 1000px;
     margin: auto;
 }
@@ -172,11 +164,21 @@ a.topMenuItem:hover {
 }
 
 
+.uspText {
+    width: 49%;
+}
 
+.uspImg {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px 20px;
+    margin: 35px 0;
+}
 
 
 
 footer {
     max-width: 1200px;
     margin: auto;
+    margin-top: 50px;
+    text-align: center;
 }
