@@ -157,7 +157,7 @@ a.topMenuItem:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 25px;
     margin-top: 50px;
     border-top: 1px solid black;
     padding-top: 25px;
@@ -167,7 +167,8 @@ a.topMenuItem:hover {
 }
 
 .businessLogos img {
-    width: 100px;
+    /* width: 100px; */
+    height: 25px;
 }
 
 
