@@ -1,3 +1,46 @@
+/* Använder er av CSS-variabler för alla färger och typsnittsstorlekar (vad ni döper variablerna till är upp till er). */
+
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+
+}
+
+/*  #050505,
+ #121212,
+ #353535,
+ #666666,
+ #7f7f7f,
+ #999999,
+ #e5e5e5,
+ #f4f4f4 och #087fe7 */
+
+/* Dessa färger används (utan någon inbördes ordning): #050505,
+#121212,
+#353535,
+#666666,
+#7f7f7f,
+#999999,
+#e5e5e5,
+#f4f4f4 och #087fe7. */
+
+/*  Följande typsnittstjocklekar har använts: 650,
+ 550,
+ 450,
+ 400 och 320. Följande typsnittsstorlekar har använts (i pixlar): 53,
+ 45,
+ 36,
+ 26,
+ 24,
+ 18,
+ 15,
+ 14,
+ 13.5,
+ 13 och 12* * När det kommer till de minsta typsnittsstorlekarna är det inte helt enkelt att få till exakt samma som vad vi har,
+ detta är vi medvetna om,
+ så gör så gott ni kan. */
+
+
 @font-face {
     font-family: inter;
     src: url(../fonts/Inter.ttf);
@@ -107,4 +150,32 @@ a.topMenuItem:hover {
     border: 1px solid #777;
     height: 20px;
     opacity: 0.5;
+}
+
+.businessLogos {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+    border-top: 1px solid black;
+    padding-top: 25px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid black;
+    padding-bottom: 25px;
+}
+
+.businessLogos img {
+    width: 100px;
+}
+
+
+
+
+
+
+footer {
+    max-width: 1200px;
+    margin: auto;
 }
