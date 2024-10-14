@@ -1,48 +1,164 @@
 /* Använder er av CSS-variabler för alla färger och typsnittsstorlekar (vad ni döper variablerna till är upp till er). */
 
 :root {
-    --blue: #1e90ff;
-    --white: #ffffff;
-
+    /* colors */
+    --black: #050505;
+    --lighterBlack: #121212;
+    --blackGray: #353535;
+    --darkGray: #666666;
+    --gray: #7f7f7f;
+    --lightGray: #999999;
+    --darkWhite: #e5e5e5;
+    --white: #f4f4f4;
+    --blue: #087fe7;
+    /* box shadow */
+    --boxShadow1: rgba(0, 0, 0, 0.1);
+    --boxShadow2: rgba(0, 0, 0, 0.2);
 }
 
-/* Dessa färger används (utan någon inbördes ordning): #050505,
-#121212,
-#353535,
-#666666,
-#7f7f7f,
-#999999,
-#e5e5e5,
-#f4f4f4 och #087fe7. */
+/* --- Tailwinds --- */
+/* -- font-weight -- */
+.fw650 {
+    font-weight: 650;
+}
 
-/* För box-shadow har dessa färger använts: rgba(0, 0, 0, 0.1) och rgba(0, 0, 0, 0.2). */
+.fw550 {
+    font-weight: 550;
+}
 
-/*  Följande typsnittstjocklekar har använts: 650,
- 550,
- 450,
- 400 och 320. Följande typsnittsstorlekar har använts (i pixlar): 53,
- 45,
- 36,
- 26,
- 24,
- 18,
- 15,
- 14,
- 13.5,
- 13 och 12* * När det kommer till de minsta typsnittsstorlekarna är det inte helt enkelt att få till exakt samma som vad vi har,
- detta är vi medvetna om,
- så gör så gott ni kan. */
+.fw450 {
+    font-weight: 450;
+}
+
+.fw400 {
+    font-weight: 400;
+}
+
+.fw320 {
+    font-weight: 320;
+}
+
+/* -- font-size -- */
+.fs53 {
+    font-size: 53px;
+}
+
+.fs45 {
+    font-size: 45px;
+}
+
+.fs36 {
+    font-size: 36px;
+}
+
+.fs26 {
+    font-size: 26px;
+}
+
+.fs24 {
+    font-size: 24px;
+}
+
+.fs18 {
+    font-size: 18px;
+}
+
+.fs15 {
+    font-size: 15px;
+}
+
+.fs14 {
+    font-size: 14px;
+}
+
+.fs13_5 {
+    font-size: 13.5px;
+}
+
+.fs13 {
+    font-size: 13px;
+}
+
+.fs12 {
+    font-size: 12px;
+}
+
+/* -- text etc. -- */
+.taC {
+    text-align: center;
+}
+
+.td1 {
+    text-decoration: 1px solid black;
+}
+
+/* -- flex -- */
+.flexContainer {
+    display: flex;
+}
+
+.flexItem {
+    flex: 1 1 0;
+}
+
+/* -- margin -- */
+.mt50 {
+    margin-top: 50px;
+}
+
+.mr50 {
+    margin-right: 50px;
+}
+
+.mb50 {
+    margin-bottom: 50px;
+}
+
+.ml50 {
+    margin-left: 50px;
+}
+
+/* -- padding -- */
+.pt50 {
+    padding-top: 50px;
+}
+
+.pr50 {
+    padding-right: 50px;
+}
+
+.pb50 {
+    padding-bottom: 50px;
+}
+
+.pl50 {
+    padding-left: 50px;
+}
+
+/* -- border -- */
+.bVer {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.bHor {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
 
 
 @font-face {
-    font-family: inter;
+    font-family: Inter;
     src: url(../fonts/Inter.ttf);
 }
 
 * {
     margin: 0;
     box-sizing: border-box;
-    font-family: inter;
+    font-family: Inter, system-ui !important;
+    text-decoration: none;
+    color: black;
 }
 
 body {
@@ -88,7 +204,6 @@ nav.topMenuItem {
     display: block;
     padding: 15px 25px;
     color: #777;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: darkgrey;
 }
 
@@ -113,10 +228,11 @@ a.topMenuItem:hover {
 }
 
 .getBarky {
-    background-color: black;
-    color: white !important;
+    background-color: var(--lighterBlack);
+    color: var(--white) !important;
     text-decoration: none;
     padding: 5px;
+    margin: 5px;
     border-radius: 7px;
 }
 
@@ -159,10 +275,12 @@ a.topMenuItem:hover {
 }
 
 .businessLogos img {
-    /* width: 100px; */
     height: 25px;
 }
 
+.usp {
+    margin-bottom: 50px;
+}
 
 .uspText {
     width: 49%;
@@ -174,7 +292,106 @@ a.topMenuItem:hover {
     margin: 35px 0;
 }
 
+.uspQuote {
+    text-align: center;
+    font-size: 37px;
+    color: darkgray;
+    font-weight: bold;
+}
 
+
+.uspQuoter {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    height: 50px;
+}
+
+.uspQuoterImg {
+    height: 100%;
+    margin-right: 10px;
+}
+
+.uspQuoterInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.uspQuoterTitle {
+    color: darkgray;
+    font-size: 13px;
+}
+
+
+.getStarted {
+    text-align: center;
+    margin: 50px auto;
+    width: 55%;
+
+}
+
+.getStarted table {
+    background: lightgray;
+    width: 100%;
+    padding: 15px;
+    border-spacing: 0;
+}
+
+#tableFeature {
+    font-weight: normal;
+}
+
+#tableCheck {
+    font-weight: 500;
+}
+
+.getStarted table img {
+    width: 20px;
+}
+
+.tableRight {
+    text-align: right;
+}
+
+.tableLeft {
+    text-align: left;
+}
+
+.getStarted table td {
+    border-top: thin solid;
+    /* border-bottom: 1px solid black; */
+    padding: 5px 0;
+}
+
+.getStarted table tr:last-of-type {
+    border: none;
+}
+
+.teams {
+    text-align: center;
+}
+
+.teamsInfo {
+    display: flex;
+}
+
+.teamsInfoItem {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.teamsInfoItem:nth-of-type(2) {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.teams {
+    margin-bottom: 50px;
+}
+
+
+.footerLine {}
 
 footer {
     max-width: 1200px;
