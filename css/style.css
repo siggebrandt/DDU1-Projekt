@@ -444,8 +444,16 @@ footer {
 
 .footerSection {
     line-height: 1.8;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 
 .footerSection a {
-    display: block;
+    display: inline-block;
+    align-self: flex-start;
+}
+
+.footerSectionText {
+    font-weight: 800;
 }
