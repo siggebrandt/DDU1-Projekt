@@ -98,7 +98,7 @@ main {
 }
 
 .introText p {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .businessLogos {
@@ -108,6 +108,7 @@ main {
     padding-top: 25px;
     border-bottom: 2px solid var(--colorG);
     padding-bottom: 25px;
+    margin: 80px 0 80px 0;
 }
 
 .businessLogos img {
@@ -119,9 +120,7 @@ main {
 
 
 
-.usp {
-    margin-bottom: 50px;
-}
+
 
 .uspText {
     width: 49%;
@@ -352,9 +351,9 @@ footer {
     text-align: left;
 }
 
-.td1 {
+/* .td1 {
     text-decoration: 1px solid black;
-}
+} */
 
 .ulLink {
     text-decoration: underline;
@@ -386,21 +385,30 @@ footer {
 }
 
 /* -- margin -- */
+.mt100 {
+    margin-top: 100px;
+}
+
 .mt50 {
     margin-top: 50px;
 }
 
-.mr50 {
-    margin-right: 50px;
+.mt10 {
+    margin-top: 10px;
+}
+
+.mb100 {
+    margin-bottom: 100px;
 }
 
 .mb50 {
     margin-bottom: 50px;
 }
 
-.ml50 {
-    margin-left: 50px;
+.mb10 {
+    margin-bottom: 10px;
 }
+
 
 /* -- padding -- */
 .pt50 {
@@ -423,6 +431,43 @@ footer {
 /* -- width -- */
 .w100 {
     width: 100%;
+}
+
+/* -- color -- */
+.colorA {
+    color: var(--colorA);
+}
+
+.colorB {
+    color: var(--colorB);
+}
+
+.colorC {
+    color: var(--colorC);
+}
+
+.colorD {
+    color: var(--colorD);
+}
+
+.colorE {
+    color: var(--colorE);
+}
+
+.colorF {
+    color: var(--colorF);
+}
+
+.colorG {
+    color: var(--colorG);
+}
+
+.colorH {
+    color: var(--colorH);
+}
+
+.colorI {
+    color: var(--colorI);
 }
 
 
