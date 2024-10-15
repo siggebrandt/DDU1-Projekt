@@ -1,178 +1,18 @@
-/* Använder er av CSS-variabler för alla färger och typsnittsstorlekar (vad ni döper variablerna till är upp till er). */
-
 :root {
     /* colors */
-    --black: #050505;
-    --lighterBlack: #121212;
-    --blackGray: #353535;
-    --darkGray: #666666;
-    --gray: #7f7f7f;
-    --lightGray: #999999;
-    --darkWhite: #e5e5e5;
-    --white: #f4f4f4;
-    --blue: #087fe7;
+    --colorA: #050505;
+    --colorB: #121212;
+    --colorC: #353535;
+    --colorD: #666666;
+    --colorE: #7f7f7f;
+    --colorF: #999999;
+    --colorG: #e5e5e5;
+    --colorH: #f4f4f4;
+    --colorI: #087fe7;
     /* box shadow */
-    --boxShadow1: rgba(0, 0, 0, 0.1);
-    --boxShadow2: rgba(0, 0, 0, 0.2);
+    --boxShadowA: rgba(0, 0, 0, 0.1);
+    --boxShadowB: rgba(0, 0, 0, 0.2);
 }
-
-/* --- Tailwinds --- */
-/* -- font-weight -- */
-.fw650 {
-    font-weight: 650;
-}
-
-.fw550 {
-    font-weight: 550;
-}
-
-.fw450 {
-    font-weight: 450;
-}
-
-.fw400 {
-    font-weight: 400;
-}
-
-.fw320 {
-    font-weight: 320;
-}
-
-/* -- font-size -- */
-.fs53 {
-    font-size: 53px;
-}
-
-.fs45 {
-    font-size: 45px;
-}
-
-.fs36 {
-    font-size: 36px;
-}
-
-.fs26 {
-    font-size: 26px;
-}
-
-.fs24 {
-    font-size: 24px;
-}
-
-.fs18 {
-    font-size: 18px;
-}
-
-.fs15 {
-    font-size: 15px;
-}
-
-.fs14 {
-    font-size: 14px;
-}
-
-.fs13_5 {
-    font-size: 13.5px;
-}
-
-.fs13 {
-    font-size: 13px;
-}
-
-.fs12 {
-    font-size: 12px;
-}
-
-/* -- text etc. -- */
-.taC {
-    text-align: center;
-}
-
-.taL {
-    text-align: left;
-}
-
-.td1 {
-    text-decoration: 1px solid black;
-}
-
-.underScoreLink
-
-/* -- flex -- */
-.flexContainer {
-    display: flex;
-}
-
-.flexContainer {
-    display: flex;
-}
-
-.flexItem {
-    flex: 1 1 0;
-}
-
-.jcC {
-    justify-content: center;
-}
-
-.jcSB {
-    justify-content: space-between;
-}
-
-.fdC {
-    flex-direction: column;
-}
-
-.aiC {
-    align-items: center;
-}
-
-/* -- margin -- */
-.mt50 {
-    margin-top: 50px;
-}
-
-.mr50 {
-    margin-right: 50px;
-}
-
-.mb50 {
-    margin-bottom: 50px;
-}
-
-.ml50 {
-    margin-left: 50px;
-}
-
-/* -- padding -- */
-.pt50 {
-    padding-top: 50px;
-}
-
-.pr50 {
-    padding-right: 50px;
-}
-
-.pb50 {
-    padding-bottom: 50px;
-}
-
-.pl50 {
-    padding-left: 50px;
-}
-
-/* -- border -- */
-.bVer {
-    border-right: 1px solid black;
-    border-left: 1px solid black;
-}
-
-.bHor {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-}
-
-
 
 @font-face {
     font-family: Inter;
@@ -182,26 +22,14 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    font-family: Inter, system-ui !important;
+    font-family: Inter, system-ui;
     text-decoration: none;
-    color: black;
+    color: var(--colorA);
 }
 
-body {
-    /* padding: 0 15px; */
-    /* width: 100vw; */
-}
+body {}
 
-main {
-    max-width: 1000px;
-    margin: auto;
-}
-
-a.topMenuItem {
-    color: black;
-    text-decoration: none;
-    padding: 5px 7px;
-}
+/* --- Header --- */
 
 header {
     position: fixed;
@@ -210,72 +38,68 @@ header {
     right: 0;
     z-index: 10;
     background: white;
-    display: flex;
     height: 50px;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: #777 solid 1px;
+    border-bottom: var(--colorG) solid 2px;
     margin: 0 10px;
     padding: 0 7px;
 }
 
-nav#topMenu {
-    width: 100%;
-
-    display: flex;
-    gap: 15px
-}
-
-.topMenuItem img {
-    margin: 1px 3px;
-}
-
-#topMenuLogo {
-    height: 20px;
-    margin-right: 10px;
-}
-
-nav.topMenuItem {
-    display: block;
-    padding: 15px 25px;
-    color: #777;
-    background-color: darkgrey;
-}
-
-nav.subMenu {
-    display: none;
-}
-
 .headerLeft,
 .headerRight {
-    display: flex;
-    align-items: center;
     gap: 5px;
 }
 
-.headerLeft a {
-    text-decoration: none;
-    color: black;
+#navLogo {
+    height: 22px;
+    margin-right: 10px;
 }
 
-a.topMenuItem:hover {
-    background-color: #cccccc;
-    border-radius: 5px;
+nav {
+    width: 100%;
+    gap: 15px
 }
 
-.getBarky {
-    background-color: var(--lighterBlack);
-    color: var(--white) !important;
-    text-decoration: none;
-    padding: 5px;
-    border-radius: 4px !important;
-    box-shadow: 0px 1px 7px 1px rgba(0, 0, 0, 0.1);
+a.navLink {
+    padding: 5px 7.5px !important;
 }
 
-.getBarky:hover {
-    background-color: var(--blackGray) !important;
-    border-radius: 4px;
+a.navLink:hover {
+    background-color: var(--colorH);
+    border-radius: 3px;
 }
+
+.navLink img {
+    margin: 1px 3px;
+}
+
+#vl {
+    border: 1px solid var(--colorG);
+    height: 17px;
+}
+
+a.getBarky {
+    background-color: var(--colorB);
+    color: white;
+    padding: 9px 15px;
+    border-radius: 3px;
+    box-shadow: 0px 1px 7px 1px var(--boxShadowA);
+}
+
+a.getBarky:hover {
+    background-color: var(--colorC) !important;
+}
+
+/* --- Main --- */
+
+main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+
+
+
 
 .intro {
     display: flex;
@@ -295,11 +119,7 @@ a.topMenuItem:hover {
     margin-bottom: 20px;
 }
 
-.vl {
-    border: 1px solid #777;
-    height: 15px;
-    opacity: 0.5;
-}
+
 
 .businessLogos {
     flex-wrap: wrap;
@@ -468,4 +288,164 @@ footer {
 
 .footerSectionText {
     font-weight: 800;
+}
+
+
+
+
+
+
+
+/* --- Tailwinds --- */
+/* -- font-weight -- */
+.fw650 {
+    font-weight: 650;
+}
+
+.fw550 {
+    font-weight: 550;
+}
+
+.fw450 {
+    font-weight: 450;
+}
+
+.fw400 {
+    font-weight: 400;
+}
+
+.fw320 {
+    font-weight: 320;
+}
+
+/* -- font-size -- */
+.fs53 {
+    font-size: 53px;
+}
+
+.fs45 {
+    font-size: 45px;
+}
+
+.fs36 {
+    font-size: 36px;
+}
+
+.fs26 {
+    font-size: 26px;
+}
+
+.fs24 {
+    font-size: 24px;
+}
+
+.fs18 {
+    font-size: 18px;
+}
+
+.fs15 {
+    font-size: 15px;
+}
+
+.fs14 {
+    font-size: 14px;
+}
+
+.fs13_5 {
+    font-size: 13.5px;
+}
+
+.fs13 {
+    font-size: 13px;
+}
+
+.fs12 {
+    font-size: 12px;
+}
+
+/* -- text etc. -- */
+.taC {
+    text-align: center;
+}
+
+.taL {
+    text-align: left;
+}
+
+.td1 {
+    text-decoration: 1px solid black;
+}
+
+.ulLink {
+    text-decoration: underline;
+}
+
+/* -- flex -- */
+.flexContainer {
+    display: flex;
+}
+
+.flexItem {
+    flex: 1 1 0;
+}
+
+.jcC {
+    justify-content: center;
+}
+
+.jcSB {
+    justify-content: space-between;
+}
+
+.fdC {
+    flex-direction: column;
+}
+
+.aiC {
+    align-items: center;
+}
+
+/* -- margin -- */
+.mt50 {
+    margin-top: 50px;
+}
+
+.mr50 {
+    margin-right: 50px;
+}
+
+.mb50 {
+    margin-bottom: 50px;
+}
+
+.ml50 {
+    margin-left: 50px;
+}
+
+/* -- padding -- */
+.pt50 {
+    padding-top: 50px;
+}
+
+.pr50 {
+    padding-right: 50px;
+}
+
+.pb50 {
+    padding-bottom: 50px;
+}
+
+.pl50 {
+    padding-left: 50px;
+}
+
+/* -- border -- */
+.bVer {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.bHor {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }

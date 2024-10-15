@@ -3,41 +3,29 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barky for Dogs and Kennels</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <div class="headerLeft">
-            <img id="topMenuLogo" src="assets/brand.svg">
-            <nav id="topMenu">
-                <div class="topMenuContainer">
-                    <a href="#" class="topMenuItem fs13_5 fw450">Product<img src="assets/nav-caret.svg"></a>
-                </div>
-
-                <div class="topMenuContainer">
-                    <a href="#" class="topMenuItem fs13_5 fw450">Team<img src="assets/nav-caret.svg"></a>
-                </div>
-
-                <div class="topMenuContainer">
-                    <a href="#" class="topMenuItem fs13_5 fw450">Inviduals<img src="assets/nav-caret.svg"></a>
-                </div>
-
-                <div class="topMenuContainer">
-                    <a href="#" class="topMenuItem fs13_5 fw450">Download<img src="assets/nav-caret.svg"></a>
-                </div>
-
-                <div class="topMenuContainer">
-                    <a href="#" class="topMenuItem fs13_5 fw450">Pricing</a>
-                </div>
+    <header class="flexContainer jcSB aiC">
+        <div class="headerLeft flexContainer aiC">
+            <img id="navLogo" src="assets/brand.svg">
+            <nav class="flexContainer">
+                <a href="#" class="navLink fs13_5 fw450">Product<img src="assets/nav-caret.svg"></a>
+                <a href="#" class="navLink fs13_5 fw450">Team<img src="assets/nav-caret.svg"></a>
+                <a href="#" class="navLink fs13_5 fw450">Inviduals<img src="assets/nav-caret.svg"></a>
+                <a href="#" class="navLink fs13_5 fw450">Download<img src="assets/nav-caret.svg"></a>
+                <a href="#" class="navLink fs13_5 fw450">Pricing</a>
+            </nav>
         </div>
 
-        <div class="headerRight">
-            <a href="#" class="topMenuItem fs13_5 fw450">Request a demo</a>
-            <div class="vl"></div>
-            <a href="#" class="topMenuItem fs13_5 fw450">Log in</a>
-            <a href="#" class="topMenuItem getBarky fs13_5 fw450">Get Barky free</a>
+        <div class="headerRight flexContainer aiC">
+            <a href="#" class="navLink fs13_5 fw450">Request a demo</a>
+            <div id="vl"></div>
+            <a href="#" class="navLink fs13_5 fw450">Log in</a>
+            <a href="#" class="navLink getBarky fs13_5 fw450">Get Barky free</a>
         </div>
     </header>
     <main class="pt50">
