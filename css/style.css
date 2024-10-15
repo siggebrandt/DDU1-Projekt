@@ -88,6 +88,10 @@
     text-align: center;
 }
 
+.taL {
+    text-align: left;
+}
+
 .td1 {
     text-decoration: 1px solid black;
 }
@@ -99,6 +103,22 @@
 
 .flexItem {
     flex: 1 1 0;
+}
+
+.jcC {
+    justify-content: center;
+}
+
+.jcSB {
+    justify-content: space-between;
+}
+
+.fdC {
+    flex-direction: column;
+}
+
+.aiC {
+    align-items: center;
 }
 
 /* -- margin -- */
@@ -390,6 +410,10 @@ a.topMenuItem:hover {
     margin-bottom: 50px;
 }
 
+.statsRating img {
+    height: 200px
+}
+
 
 .footerLine {}
 
@@ -398,4 +422,12 @@ footer {
     margin: auto;
     margin-top: 50px;
     text-align: center;
+}
+
+.footerInfo img {
+    width: 150px;
+}
+
+.footerShare img {
+    width: 25px;
 }
