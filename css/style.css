@@ -182,7 +182,8 @@
 }
 
 body {
-    padding: 0 15px;
+    /* padding: 0 15px; */
+    /* width: 100vw; */
 }
 
 main {
@@ -197,11 +198,20 @@ a.topMenuItem {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 100%;
+    width: 100%;
+    z-index: 10;
+    background: white;
     display: flex;
     height: 50px;
     justify-content: space-between;
     align-items: center;
     border-bottom: #777 solid 1px;
+    margin: 0 10px;
+    padding: 0 7px;
 }
 
 nav#topMenu {
@@ -430,4 +440,12 @@ footer {
 
 .footerShare img {
     width: 25px;
+}
+
+.footerSection {
+    line-height: 1.8;
+}
+
+.footerSection a {
+    display: block;
 }
