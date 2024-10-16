@@ -51,7 +51,6 @@ header {
 
 #navLogo {
     height: 22px;
-    margin-right: 10px;
 }
 
 nav {
@@ -93,7 +92,6 @@ a.getBarky:hover {
 
 main {
     max-width: 1000px;
-    margin: auto;
     padding-top: 130px;
 }
 
@@ -117,50 +115,25 @@ main {
 
 
 
+/********/
 
 
-
-
+/* -- USPs -- */
 
 .uspText {
-    width: 49%;
+    width: 50%;
 }
 
 .uspImg {
-    width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px 20px;
-    margin: 35px 0;
+    box-shadow: 0px 1px 25px 3px var(--boxShadowB);
 }
-
-.uspQuote {
-    text-align: center;
-    font-size: 37px;
-    color: darkgray;
-    font-weight: bold;
-}
-
 
 .uspQuoter {
-    display: flex;
-    margin: auto;
-    justify-content: center;
     height: 50px;
 }
 
 .uspQuoterImg {
     height: 100%;
-    margin-right: 10px;
-}
-
-.uspQuoterInfo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.uspQuoterTitle {
-    color: darkgray;
-    font-size: 13px;
 }
 
 
@@ -239,7 +212,6 @@ main {
 
 footer {
     max-width: 1200px;
-    margin: auto;
     margin-top: 50px;
     text-align: center;
     padding-right: 200px;
@@ -385,6 +357,10 @@ footer {
 }
 
 /* -- margin -- */
+.mA {
+    margin: auto;
+}
+
 .mt100 {
     margin-top: 100px;
 }
@@ -407,6 +383,10 @@ footer {
 
 .mb10 {
     margin-bottom: 10px;
+}
+
+.mr10 {
+    margin-right: 10px;
 }
 
 
