@@ -97,6 +97,7 @@ main {
 
 .introText p {
     margin-bottom: 20px;
+    margin-right: 35px;
 }
 
 .businessLogos {
@@ -113,11 +114,6 @@ main {
     height: 25px;
 }
 
-
-
-/********/
-
-
 /* -- USPs -- */
 
 .uspText {
@@ -128,6 +124,10 @@ main {
     box-shadow: 0px 1px 25px 3px var(--boxShadowB);
 }
 
+.uspQuote {
+    padding: 0 17px;
+}
+
 .uspQuoter {
     height: 50px;
 }
@@ -136,31 +136,23 @@ main {
     height: 100%;
 }
 
-
-.getStarted {
-    text-align: center;
-    margin: 50px auto;
-    width: 55%;
-
+/* -- Get Started (Sektion 6) -- */
+#getStartedBorder {
+    border-top: 1px solid var(--colorG);
+    border-bottom: 1px solid var(--colorG);
 }
 
-.getStarted table {
-    background: lightgray;
+#getStarted {
+    width: 60%;
+}
+
+#getStarted table {
+    margin-top: 40px;
+    background: var(--colorH);
     width: 100%;
-    padding: 15px;
+    padding: 25px;
     border-spacing: 0;
-}
-
-#tableFeature {
-    font-weight: normal;
-}
-
-#tableCheck {
-    font-weight: 500;
-}
-
-.getStarted table img {
-    width: 20px;
+    border-radius: 6px;
 }
 
 .tableRight {
@@ -171,16 +163,24 @@ main {
     text-align: left;
 }
 
-.getStarted table td {
-    border-top: thin solid;
-    /* border-bottom: 1px solid black; */
-    padding: 5px 0;
+#getStarted table td {
+    border-top: 1px solid var(--colorG);
+    color: var(--colorD);
+    padding: 10px 0;
 }
 
-.getStarted table tr:last-of-type {
-    border: none;
+#getStarted table th {
+    padding: 0 0 10px;
 }
 
+#getStarted table img {
+    height: 15px;
+}
+
+
+/*********/
+
+/* -- Teams (Sektion 7) -- */
 .teams {
     text-align: center;
 }
@@ -323,6 +323,10 @@ footer {
     text-align: left;
 }
 
+.taR {
+    text-align: right;
+}
+
 /* .td1 {
     text-decoration: 1px solid black;
 } */
@@ -365,8 +369,16 @@ footer {
     margin-top: 100px;
 }
 
+.mt75 {
+    margin-top: 75px;
+}
+
 .mt50 {
     margin-top: 50px;
+}
+
+.mt25 {
+    margin-top: 25px;
 }
 
 .mt10 {
@@ -377,8 +389,16 @@ footer {
     margin-bottom: 100px;
 }
 
+.mb75 {
+    margin-bottom: 75px;
+}
+
 .mb50 {
     margin-bottom: 50px;
+}
+
+.mb25 {
+    margin-bottom: 25px;
 }
 
 .mb10 {
@@ -406,6 +426,10 @@ footer {
 
 .pb10 {
     padding-bottom: 10px;
+}
+
+.pr15 {
+    padding-right: 15px;
 }
 
 /* -- width -- */
