@@ -187,14 +187,23 @@ main {
     padding: 0 30px;
 }
 
-
-/*********/
-
-/* -- Statistics (Sektion 7) -- */
+/* -- Statistics (Sektion 8) -- */
+.statsRating {
+    gap: 20px;
+}
 
 .statsRating img {
     height: 200px
 }
+
+.statsBorder {
+    border-right: 1px solid var(--colorG);
+}
+
+/* -- Try Today (Sektion 9) -- */
+
+
+/*********/
 
 
 .footerLine {}
@@ -318,6 +327,10 @@ footer {
 
 .tdU {
     text-decoration: underline;
+}
+
+.hoverBlue:hover {
+    color: var(--colorI)
 }
 
 /* -- flex -- */
@@ -464,9 +477,4 @@ footer {
 .bVer {
     border-right: 1px solid var(--colorG);
     border-left: 1px solid var(--colorG);
-}
-
-.bHor {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
 }
