@@ -177,31 +177,20 @@ main {
     height: 15px;
 }
 
+/* -- Teams (Sektion 7) -- */
+
+.teamsInfo {
+    margin-top: 30px;
+}
+
+.teamsInfoItem p {
+    padding: 0 30px;
+}
+
 
 /*********/
 
-/* -- Teams (Sektion 7) -- */
-.teams {
-    text-align: center;
-}
-
-.teamsInfo {
-    display: flex;
-}
-
-.teamsInfoItem {
-    flex-grow: 1;
-    flex-basis: 0;
-}
-
-.teamsInfoItem:nth-of-type(2) {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-}
-
-.teams {
-    margin-bottom: 50px;
-}
+/* -- Statistics (Sektion 7) -- */
 
 .statsRating img {
     height: 200px
@@ -327,11 +316,7 @@ footer {
     text-align: right;
 }
 
-/* .td1 {
-    text-decoration: 1px solid black;
-} */
-
-.ulLink {
+.tdU {
     text-decoration: underline;
 }
 
@@ -477,8 +462,8 @@ footer {
 
 /* -- border -- */
 .bVer {
-    border-right: 1px solid black;
-    border-left: 1px solid black;
+    border-right: 1px solid var(--colorG);
+    border-left: 1px solid var(--colorG);
 }
 
 .bHor {
