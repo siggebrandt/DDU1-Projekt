@@ -40,8 +40,7 @@ header {
     background: white;
     height: 50px;
     border-bottom: var(--colorG) solid 2px;
-    margin: 0 10px;
-    padding: 0 7px;
+    margin: 0 15px;
 }
 
 .headerLeft,
@@ -200,11 +199,11 @@ main {
     border-right: 1px solid var(--colorG);
 }
 
-/* -- Try Today (Sektion 9) -- */
-
 
 /*********/
 
+
+/* -- Footer -- */
 
 .footerLine {}
 
