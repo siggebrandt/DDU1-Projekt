@@ -54,11 +54,11 @@ nav {
     gap: 15px
 }
 
-a.navLink {
+.navLink {
     padding: 5px 7.5px !important;
 }
 
-a.navLink:hover {
+.navLink:hover {
     background-color: var(--colorH);
     border-radius: 3px;
 }
@@ -85,11 +85,16 @@ a.getBarky:hover {
     background-color: var(--colorC) !important;
 }
 
+#mobileNav {
+    display: none;
+}
+
 /* --- Main --- */
 
 main {
     max-width: 1000px;
     padding-top: 130px;
+    margin: 0 15px;
 }
 
 .introText p {
@@ -114,7 +119,7 @@ main {
 /* -- USPs -- */
 
 .uspText {
-    width: 50%;
+    width: 47%;
 }
 
 .uspImg {
@@ -123,6 +128,7 @@ main {
 
 .uspQuote {
     padding: 0 17px;
+    margin-bottom: 15px;
 }
 
 .uspQuoter {
@@ -197,10 +203,6 @@ main {
     border-right: 1px solid var(--colorG);
 }
 
-
-/*********/
-
-
 /* -- Footer -- */
 
 .footerLine {
@@ -238,8 +240,132 @@ footer {
     line-height: 1.8;
 }
 
+.footerSection a:hover {
+    text-decoration: underline;
+}
+
 
 /* --- Media Queries --- */
+
+@media (max-width: 600px) {
+    header {
+        position: static;
+        border: none;
+    }
+
+    header nav a,
+    .headerRight {
+        display: none !important;
+    }
+
+    #mobileNav {
+        display: block;
+    }
+
+    #mobileNav img {
+        height: 28px;
+    }
+
+    main {
+        margin: 0 25px !important;
+        text-align: center;
+    }
+
+    #intro {
+        flex-direction: column-reverse;
+    }
+
+    #intro img {
+        width: 90%;
+    }
+
+    /* .businessLogos img {
+        height: 22px;
+    } */
+
+    .uspText {
+        width: 100%;
+    }
+
+    p.uspQuote {
+        font-size: 24px;
+    }
+
+    .uspQuoter .uspQuoterInfo {
+        text-align: left;
+    }
+
+    #getStarted {
+        width: 100%;
+    }
+
+    .teamsInfo {
+        flex-direction: column;
+    }
+
+    .teamsInfo .bVer {
+        border: none;
+    }
+
+    .teamsInfo {
+        gap: 40px;
+    }
+
+    .teamsInfoItem h3 {
+        font-size: 18px;
+    }
+
+    .statsRating {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .statsRating h3 {
+        font-size: 24px;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .statsItem {
+        border: none;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footerShare {
+        margin-bottom: 25px !important;
+    }
+
+    .footerLine {
+        padding: 0 10px;
+    }
+
+    .footerLinks {
+        grid-template: repeat(2, auto) / repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    /* h2 {
+        font-size: 26px;
+    } */
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -328,7 +454,8 @@ footer {
 }
 
 .hoverBlue:hover {
-    color: var(--colorI)
+    color: var(--colorI);
+    text-decoration-color: var(--colorA);
 }
 
 /* -- flex -- */
