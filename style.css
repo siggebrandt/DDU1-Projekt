@@ -94,7 +94,7 @@ a.getBarky:hover {
 main {
     max-width: 1000px;
     padding-top: 130px;
-    margin: 0 15px;
+    padding: 130px 15px 0;
 }
 
 .introText p {
@@ -258,6 +258,18 @@ footer {
         display: none !important;
     }
 
+    .introText h1 {
+        font-size: 36px;
+    }
+
+    .introText p,
+    .uspQuote {
+        margin-right: 0;
+        margin-left: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
     #mobileNav {
         display: block;
     }
@@ -267,6 +279,7 @@ footer {
     }
 
     main {
+        padding: 75px 0 0;
         margin: 0 25px !important;
         text-align: center;
     }
@@ -278,10 +291,6 @@ footer {
     #intro img {
         width: 90%;
     }
-
-    /* .businessLogos img {
-        height: 22px;
-    } */
 
     .uspText {
         width: 100%;
@@ -351,25 +360,11 @@ footer {
         grid-template: repeat(2, auto) / repeat(2, 1fr);
         grid-gap: 20px;
     }
-
-    /* h2 {
-        font-size: 26px;
-    } */
-
 }
 
 
+/* --- Styling Classes --- */
 
-
-
-
-
-
-
-
-
-
-/* --- Tailwinds --- */
 /* -- font-weight -- */
 .fw650 {
     font-weight: 650;
