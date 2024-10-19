@@ -1,2 +1,0 @@
-Inkludera även en textfil där ni skriver både adressen till er webbplats (online) och ert GitHub repos-
-itory (se till att detta är ett public repository så att vi kan se allt).

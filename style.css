@@ -1,6 +1,6 @@
 @font-face {
     font-family: Inter;
-    src: url(fonts/Inter.ttf);
+    src: url(assets/Inter.ttf);
 }
 
 * {
@@ -106,7 +106,7 @@ main {
 }
 
 .uspImg {
-    box-shadow: 0px 1px 25px 3px var(--boxShadowB);
+    box-shadow: 0px 1px 15px 3px var(--boxShadowB);
 }
 
 .uspQuote {
@@ -324,6 +324,10 @@ footer {
     .statsRating {
         flex-direction: column;
         text-align: left;
+    }
+
+    .statsRating img {
+        width: 100%;
     }
 
     .statsRating h3 {
