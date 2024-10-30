@@ -10,6 +10,6 @@ design så gott det går utifrån det material (flertal videos & skärmdumpar) n
 
 ## Redovisning
 Det färdiga projektet finns tillgängligt på ett flertal olika källor, 
-- [GitHub repository](https://github.com/siggebrandt/Projekt-DDU1)
+- [GitHub Repository](https://github.com/siggebrandt/Projekt-DDU1)
 - [Webbplats (MAU WebShare)](https://webshare.mah.se/aq2697/Projekt-DDU1)
 - [Webbplats (GitHub Pages)](https://siggebrandt.github.io/Projekt-DDU1/)
