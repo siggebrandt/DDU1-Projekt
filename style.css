@@ -180,6 +180,7 @@ main {
 
 .statsRating img {
     width: 50%;
+    object-fit: contain;
 }
 
 .statsBorder {
