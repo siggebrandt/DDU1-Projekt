@@ -1,4 +1,4 @@
-# Projekt-DDU1
+# DDU1-Projekt
 **Digital Design och Utveckling 1, Malmö Universitet, Höstterminen 2024**
 
 ## Beskrivning
@@ -10,6 +10,6 @@ design så gott det går utifrån det material (flertal videos & skärmdumpar) n
 
 ## Redovisning
 Det färdiga projektet finns tillgängligt på ett flertal olika källor, 
-- [GitHub Repository](https://github.com/siggebrandt/Projekt-DDU1)
-- [Webbplats (MAU WebShare)](https://webshare.mah.se/aq2697/Projekt-DDU1)
-- [Webbplats (GitHub Pages)](https://siggebrandt.github.io/Projekt-DDU1/)
+- [GitHub Repository](https://github.com/siggebrandt/DDU1-Projekt)
+- [Webbplats (GitHub Pages)](https://siggebrandt.github.io/DDU1-Projekt/)
+- [Webbplats (MAU WebShare)](https://webshare.mah.se/aq2697/ddu1/projekt/)
